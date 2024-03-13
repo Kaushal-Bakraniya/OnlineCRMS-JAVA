@@ -13,7 +13,7 @@ User Login Credentials
 Admin Login Credentials
 - Username: admin
 - Password: 1234
-- 
+
 ## Note
 
 Please note that this project is intended for educational and personal use only. All the records in the database are fictitious, and the images and content used within the application are solely for demonstration purposes.
