@@ -1,0 +1,147 @@
+/*Login & Registration Page Start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    height: 100%;
+    background-image: url("../Images/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formbg {
+    background-image: url("../Images/formbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 8px;
+    position: absolute;
+    left: 23%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+}
+.form-container {
+    background:aliceblue;
+    padding: 30px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,15);
+    border-radius: 3px;
+}
+.heading {
+    background: black;
+    margin: -30px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.form-item {
+    margin-bottom: 17px;
+}
+.fullname, .select-box{
+    display: flex;
+}
+.fullname .form-item, 
+.select-box .form-item {
+    width: 50%;
+}
+.fullname .form-item:first-child,
+.select-box .form-item:first-child {
+    margin-right: 4%;
+}
+.form-item input[type="text"], input[type="file"], input[type="date"], input[type="password"], input[type="email"],
+.form-item select  {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #dadce0;
+    background-color: white;
+}
+.form-item input[type="text"]:focus {
+    border-color: #6271f0;
+}
+.form-container .form-item label {
+    display: block;
+    margin-bottom: 7px;
+}
+.btn input[type="submit"] {
+    background: black;
+    border: 1px solid black;
+    padding: 8px;
+    margin-top:8px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+.form-container .form-wrap .form-item img {
+    width: 30vh;
+}
+.login {
+    max-width: 400px;
+    width: 100%;
+}
+.login .form-container .fit {
+    text-align: center;
+}
+.login .form-container {
+    padding-bottom: 10px;
+}
+.form-container p, a {
+    margin-top: 2vh;
+    font-size:2.5vh;
+    text-decoration: none;
+}
+.login .form-container p, a {
+    margin-bottom: 1.7vh;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+}
+footer p {
+    display: inline;
+}
+.ftr {
+    position: relative;
+}
+/*Login & Registration Page End*/
+
+/* Add Car Page Start */
+.addcar {
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 8px;
+    margin-bottom: 3%;
+}
+/* Add Car Page End */
+@media only screen and (max-width:900px){
+    /*Login And Register Page Start*/
+    body, .bg{
+        background-image: none;
+        background-color: white;
+    }
+    .wrapper{
+        left: 50%;
+    }
+    footer p a {
+        right: 0;
+    }
+    /*Login And Register Page End*/
+}

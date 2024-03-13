@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Header Section Start */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+    filter: drop-shadow(0, -10px, 20px, rgb(170, 170, 170));
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none !important;
+}
+
+.nav-bar ul li a:hover {
+    color: #111011;
+    background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: #111011;
+    background: #fefefe;
+}
+
+.fix {
+    display: flex;
+}
+
+.fix .nav-bar {
+    margin-top: 1.5%;
+}
+
+/*Header Section End */
+
+/* Footer Section Starts */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Footer Section Ends */
+
+/*Home Section Starts*/
+.home {
+    padding-top: 8rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h1 {
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/*Home Section Ends*/
+
+/*Index Page starts*/
+.ipheight {
+    height: 7vh;
+}
+
+.temp-label {
+    color: white;
+}
+
+/*Index Page ends*/
+
+/*About Us Section Starts*/
+.about-section {
+    margin-top: 5rem;
+}
+
+.about-section h1 {
+    font-size: 7vh;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.about-section div p {
+    margin-bottom: 3vh;
+}
+
+.about-section .contact-form,
+p,
+h1 {
+    margin-bottom: 0;
+    text-align: left;
+    text-align: justify;
+}
+
+.about-section .contact-form div img {
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.fnt-size {
+    font-size: 100px;
+}
+
+.contact-info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span .fas {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: black;
+}
+
+.contact-info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-info .text {
+    padding-top: 0.4rem;
+}
+
+.contact-form {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.contact-form form {
+    padding-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.contact-form form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+.send-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.send-btn:hover {
+    opacity: 0.8;
+}
+
+.contact-form div img {
+    width: 85%;
+    margin-left: -15%;
+}
+
+.contact-form div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*About Us Section Starts*/
+
+/*Join Us Section Starts*/
+#Partner {
+    margin-top: 7rem;
+}
+
+.JoinUs {
+    padding: 2rem 7%;
+    text-align: left;
+}
+
+.JoinUs .JoinUsInfo {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.JoinUs .JoinUsInfo div {
+    margin: 0 auto;
+}
+
+.JoinUs .JoinUsInfo div img {
+    width: 90%;
+    margin-left: -5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.JoinUs .JoinUsInfo div h1 {
+    font-size: 8vh;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.JoinUs .JoinUsInfo div p {
+    font-size: 2.7vh;
+    text-align: justify;
+}
+
+.JoinUs .JoinUsInfo div .btn {
+    margin-top: 5vh;
+    padding: 2%;
+    font-size: 100%;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+.JoinUs .JoinUsInfo div .btn:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#driver {
+    margin-top: 2rem;
+    padding: 0 7%;
+    text-align: right;
+    margin-bottom: 6rem;
+}
+
+#driver .JoinUsInfo .dinfo {
+    margin-left: -5%;
+}
+
+/*Join Us Section Ends*/
+
+/*User Profile Page Start*/
+
+.fix-container {
+    margin-top: 7rem;
+    color: black;
+}
+
+.fix-container .card {
+    border: 1px solid black;
+}
+
+.card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*User Profile Page Ends*/
+
+/*Book a car Page Starts*/
+.height {
+    margin-top: 17vh;
+    margin-bottom: 2rem;
+}
+
+.height_2 {
+    margin-top: 22vh !important;
+    margin-bottom: 3rem;
+}
+
+.form {
+    position: relative;
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af;
+}
+
+.form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+}
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.product-item {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+}
+
+.product-item .down-content {
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-item .down-content h4 {
+    font-size: 20px;
+}
+
+.product-item .down-content h6 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.product-item .down-content span {
+    border-radius: 5px;
+    right: 30px;
+    bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*Book a car page Ends*/
+
+/*Car Details Page Starts*/
+#cardetails {
+    margin-top: 5rem;
+}
+
+#cardetails .JoinUsInfo #img1 {
+    margin-left: -10%;
+}
+
+#cardetails .JoinUsInfo #img1,
+#img2 {
+    width: 35rem;
+    height: 23rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cardetails .JoinUsInfo #img2 {
+    margin-left: 7%;
+}
+
+#cardetails h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#info {
+    padding: 0;
+}
+
+#info .col-sm {
+    padding-left: 60px;
+}
+
+#info .col-sm p {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Car Details Page Ends*/
+
+/* Media Queries Start */
+@media only screen and (max-width: 1150px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .ipheight {
+        height: 37px;
+    }
+
+    .fix-ip {
+        margin-top: -4%;
+    }
+
+    .temp-label {
+        display: none;
+    }
+
+    .home h1 {
+        font-size: 225%;
+    }
+
+    #cardetails h1 {
+        text-align: center;
+        font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    /*Nav Bar Starts*/
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #111011;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    .fix .nav-bar {
+        margin-top: 0%;
+    }
+
+    /*Nav Bar Ends*/
+
+    /*Home page starts*/
+    .contact-section .contact-body h1 {
+        font-size: 35px;
+    }
+	
+.height_2 {
+    margin-top: 20vh !important;
+}
+    /*Home Page Ends*/
+
+    /*Abouts us page starts*/
+    .contact-info {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bdr {
+        border: 1px solid black;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .contact-form img {
+        margin-left: 0;
+    }
+
+    /*About us page ends*/
+
+    /*Join us page starts*/
+    #Partner {
+        margin-top: 3rem;
+    }
+
+    .JoinUs * {
+        text-align: left;
+    }
+
+    .JoinUs {
+        padding-bottom: 0;
+        margin-bottom: -6%;
+    }
+
+    #driver .JoinUsInfo {
+        padding: 1rem 0;
+    }
+
+    .JoinUs .JoinUsInfo div img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .JoinUs .JoinUsInfo div h1 {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .JoinUs .JoinUsInfo div p {
+        font-size: 2.5vh;
+    }
+
+    .JoinUs .JoinUsInfo {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 0;
+    }
+
+    #driver {
+        margin-top: 0;
+        padding: 0 7%;
+        text-align: right;
+        margin-bottom: 1.5rem;
+    }
+
+    #driver .JoinUsInfo .dinfo {
+        margin-bottom: 2rem;
+    }
+
+    #driver .JoinUsInfo .dinfo {
+        margin-left: 0;
+    }
+
+    /*Join us page ends*/
+
+    /*User Profile Page Starts*/
+    .fix-details {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem;
+    }
+
+    .fix-2 {
+        margin-top: 5rem;
+    }
+
+    /*User Profile Page Ends*/
+
+    /*Book a car Starts*/
+    .height {
+        margin-top: 16vh;
+        margin-bottom: 2rem;
+    }
+
+    .height_2 {
+        margin-top: 16vh;
+        margin-bottom: 2rem;
+    }
+
+    /*Book a car ends*/
+
+    /*Car Details Page Start*/
+    #cardetails {
+        margin-top: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #cardetails .JoinUsInfo #img1,
+    #img2 {
+        width: 80vw;
+        height: 100%;
+        margin: auto;
+    }
+
+    #cardetails .JoinUsInfo #img2 {
+        margin-left: 0;
+        margin-top: 12%;
+    }
+
+    #info .col-sm {
+        padding-left: 8%;
+    }
+
+    #info .col-sm p {
+        font-size: 100%;
+    }
+
+    /*Car Details Page End*/
+
+    /*Footer Start*/
+    footer {
+        position: relative;
+        bottom: -0vh;
+    }
+
+    /*Footer End*/
+}
+
+/* Media Queries End */
