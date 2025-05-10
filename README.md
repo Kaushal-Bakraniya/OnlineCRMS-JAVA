@@ -1,4 +1,4 @@
-# CRMS-WindowsApp
+# Online CRMS - JAVA
 
 The Car Rental Management System is a web application developed using J2EE with MySQL Database. Here customers can easily browse available cars, make bookings, and download PDF receipts for their records. Additionally, users receive confirmation emails upon successful booking, ensuring they are kept informed about their reservations. It also offers an admin interface to efficiently handle various tasks related to car rentals, such as booking management, customer management, and other essential functionalities. 
 
